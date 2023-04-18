@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+    在 HTML 中引入 CSS 样式表有三种方式
+    1. 行内样式
+    2. 内部样式
+    3. 外部样式
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--外部样式表：在 HTML 文件头部使用 <link> 元素链接外部样式表文件-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--  内部样式表：使用 <style> 元素在 HTML 文件头部定义样式  -->
+    <style>
+        body {
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--行内样式：使用 style 属性为某个 HTML 元素定义样式-->
+    <h1 style="color: red; text-align: center;">Hello World!</h1>
+
+    <!--  外部样式标题的使用   -->
+    <h2>这是二级标题</h2>
+</body>
+</html>
