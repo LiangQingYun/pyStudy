@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    使用F12进行查看 
+-->
+    <script>
+        let i = 1 ;
+        // 设置定时器
+        const timerId = setInterval(() => {
+           alert('我会重复执行  当前执行第' + i + '次');
+           i++;
+        }, 1000);
+
+        // 5 秒后取消定时器
+        setTimeout(() => {
+          clearInterval(timerId);
+          alert('定时器已经取消');
+        }, 5000);
+
+    </script>
+</body>
+</html>

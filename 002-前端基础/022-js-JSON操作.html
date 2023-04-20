@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  下载 jQuery，并将其存放在你的项目目录中。然后，在 HTML 文件中引入它  -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // <!-- JSON.parse()函数将一个JSON格式的字符串转换为一个JavaScript对象 -->
+        let jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+        let obj = JSON.parse(jsonString);
+        alert(obj.name);
+
+        // <!--JSON.stringify()函数将一个JavaScript对象转换为一个JSON格式的字符串-->
+        let obj2 = {name: "John", age: 30, city: "New York"};
+        let jsonString2 = JSON.stringify(obj2);
+        alert(jsonString2);
+    </script>
+
+</body>
+
+</html>

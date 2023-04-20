@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  下载 jQuery，并将其存放在你的项目目录中。然后，在 HTML 文件中引入它  -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!--    这是用jQuery实现 , 表示等待DOM树加载完毕之后执行函数里面的内容    -->
+        $(function () {
+                alert($("div"))
+            }
+        )
+        // 等价
+        $(document).ready(function(){})
+    </script>
+    <div id='divid'>  </div>
+</body>
+
+</html>

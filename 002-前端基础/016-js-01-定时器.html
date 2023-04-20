@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    JavaScript 中有两种定时器，分别为 setTimeout() 和 setInterval()。
+    setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式   只执行一次
+    语法如下：
+        setTimeout(function, milliseconds);
+    参数说明：
+        function：必需。要调用的函数或要执行的代码字符串。
+        milliseconds：必需。在执行代码之前需要等待的毫秒数。
+    例子：
+        setTimeout(function(){alert("Hello")}, 3000);
+
+    setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式   重复执行
+    语法如下：
+        setInterval(function, milliseconds);
+    参数说明：
+        function：必需。要调用的函数或要执行的代码字符串。
+        milliseconds：必需。在执行代码之前需要等待的毫秒数。
+    例子：
+        setInterval(function(){alert("Hello")}, 3000);
+    -->
+    <script>
+        let i= 0;
+        setTimeout(function(){alert("我只执行一次.....")}, 2000);
+        setInterval(function(){i++;alert(`我会重复执行 , 当前为第${i}`);}, 4000);
+    </script>
+</body>
+</html>

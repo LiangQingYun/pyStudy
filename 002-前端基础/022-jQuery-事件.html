@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  下载 jQuery，并将其存放在你的项目目录中。然后，在 HTML 文件中引入它  -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<!--鼠标事件：click（鼠标点击事件）、dblclick（鼠标双击事件）、mousedown（鼠标按下事件）、mouseup（鼠标抬起事件）、mousemove（鼠标移动事件）、mouseover（鼠标进入事件）、mouseout（鼠标离开事件）等。-->
+<!--键盘事件：keydown（键盘按下事件）、keyup（键盘抬起事件）、keypress（键盘按键事件）等。-->
+<!--表单事件：submit（表单提交事件）、change（表单元素值改变事件）、focus（表单元素获得焦点事件）、blur（表单元素失去焦点事件）等。-->
+<!--文档事件：load（页面加载事件）、unload（页面卸载事件）、resize（窗口大小改变事件）、scroll（滚动条滚动事件）等。-->
+<!--其他事件：error（资源加载错误事件）、contextmenu（鼠标右键菜单事件）、drag（拖动事件）、drop（拖放事件）等。-->
+
+    <script>
+        $(function () {
+                $('#myButton').on('click', function() {
+                  alert('你点击了这个按钮....');
+                });
+            }
+        )
+
+    </script>
+    <button id="myButton">点点我</button>
+</body>
+
+</html>
