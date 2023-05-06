@@ -1,6 +1,6 @@
 import time
 
-
+# 类似闭包 ,  内部函数调用外部函数的变量   外部函数返回内部函数的引用
 def time_it(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()

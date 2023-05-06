@@ -9,6 +9,8 @@ kw = {
 
 }
 
+# get用 params   post用json(传递字典)   用data就是传递字符串
+
 with requests.get(url, headers=headers , params=kw) as response:
     response.encoding = 'utf-8'
     print(response.text)

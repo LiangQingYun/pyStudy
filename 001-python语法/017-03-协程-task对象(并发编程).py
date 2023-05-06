@@ -47,11 +47,16 @@ async def main(case):
         for task in done:
             print(task.result())
 
-
 """
     用run()方法来启动协程  不用自定义事件循环
     当前代码时一个同步单线程代码
 """
-
 # asyncio.run(main_error())
-asyncio.run(main(1))
+asyncio.run(main(3))
+"""
+    用run可能会报错 : RuntimeError: Event loop is closed 
+    可以换方式
+"""
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main(3))
+
