@@ -52,6 +52,7 @@ charles中文名叫青花瓷，它是一款基于HTTP协议的代理服务器，
 #### 软件安装
 
 **官方下载**：<https://www.charlesproxy.com/latest-release/download.do>
+**注册码生成地址**:https://www.zzzmode.com/mytools/charles/ 
 
 **汉化版**：https://www.52pojie.cn/thread-1600964-1-1.html
 
@@ -213,19 +214,17 @@ charles中文名叫青花瓷，它是一款基于HTTP协议的代理服务器，
 
 #### 1.Charles代理设置
 
-![](imgs/07-09.png)
-
 - 设置Charles的启动端口默认是8888，可以自行修改
-
+![img.png](img.png)  ![](imgs/07-10.png)
 #### 2.Charles访问控制
 
 - 作用：允许哪些设备通过Charles来访问网络
+![img_2.png](img_2.png)
 
-  ![](imgs/07-10.png)
 
 #### 3.添加HTTPS端口监听
 
-![](.\imgs\image-20220807205407574.png)
+![img_1.png](img_1.png)
 
 ​	**`注：没有添加端口可能会出现乱码问题`**
 
@@ -237,8 +236,7 @@ charles中文名叫青花瓷，它是一款基于HTTP协议的代理服务器，
 
 - 下载证书保存到浏览器跟目录
 
-  ![image-20220807204903808](.\imgs\image-20220807204903808.png)
-
+![img_3.png](img_3.png)
 安装过程：点击help --》SSL proxying --》install charles root certificate --》安装证书 --》选择本地计算机 --》点下一步 --》选择将所有的证书都放入下列存储  -- 》点击浏览  -- 》选择受信任的根证书颁发机构  --》点击确定 --》点击完成
 
 
