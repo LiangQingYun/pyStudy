@@ -14,7 +14,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
+# 指定ChromeDriver的路径   也可以放在与执行器的文件同目录
+driver_path = 'D:\\software\\chromedriver_win32\\chromedriver.exe'
+
 # 创建Chrome浏览器实例
+# driver = webdriver.Chrome(executable_path=driver_path)
 driver = webdriver.Chrome()
 
 # 打开一个网页
@@ -27,6 +31,7 @@ search_box.send_keys(Keys.ENTER)
 
 # 获取搜索结果
 search_results = driver.find_elements(by=By.CSS_SELECTOR, value="div.g")
+print(search_results)
 for result in search_results:
     title = result.find_element(by=By.TAG_NAME, value="h3")
     link = result.find_element(by=By.TAG_NAME, value="a")
@@ -34,4 +39,3 @@ for result in search_results:
 
 # 关闭浏览器
 driver.quit()
-

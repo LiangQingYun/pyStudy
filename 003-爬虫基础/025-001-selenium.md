@@ -1,3 +1,7 @@
+### selenium官方文档
+https://selenium-python.readthedocs.io/index.html
+谷歌浏览器驱动下载 : https://chromedriver.storage.googleapis.com/index.html?path=113.0.5672.63/
+
 ### 浏览器(旧版本)
 旧版本chrome下载地址 :  https://downzen.com/en/windows/google-chrome/versions/
 
@@ -53,7 +57,7 @@ Windows Registry Editor Version 5.00
 ### selenium 驱动下载  ,对应浏览器版本
 `windows只有32位版本`  
 下载地址 :
-Chrome WebDriver：https://sites.google.com/a/chromium.org/chromedriver/downloads  
+Chrome WebDriver：https://sites.google.com/a/chromium.org/chromedriver/downloads     https://chromedriver.storage.googleapis.com/index.html?path=113.0.5672.63/
 Firefox WebDriver：https://github.com/mozilla/geckodriver/releases  
 Edge WebDriver：https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/  
 Safari WebDriver：https://webkit.org/blog/6900/webdriver-support-in-safari-10/  
