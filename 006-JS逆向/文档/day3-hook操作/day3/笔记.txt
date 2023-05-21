@@ -1,0 +1,52 @@
+
+https://oauth.d.cn/api?display=web&name=13535353535          1
+https://oauth.d.cn/regist?display=web&name=13535353535       2
+https://oauth.d.cn/auth/login?display=web&name=13535353535   3
+
+
+https://oauth.d.cn
+     可以
+
+
+https 协议
+oauth.d.cn  域名    /auth/login  路径    display=web 查询参数 约定的
+
+xhr断点
+        为啥不能用---》  ?display=web&name=13535353535   他会变化
+     用唯一的值比较准确
+        /regist
+        https://oauth.d.cn/auth/login
+        /login
+
+断点调试
+   dom断点
+         rsa(passwordVal)
+
+   xhr断点
+         $.get("https://oauth.d.cn/auth/login?display=web",submitData)
+          .success(function(data){}    data 后台返回的数据
+         .error(function() { new pwdLgnErr('出错啦！') })
+  扣代码
+    从入口开始扣代码    把明文变成密文 基本上就是入口
+         rsa(passwordVal);
+    1、在Node里面执行  缺啥补啥
+     主要考验耐心
+
+
+    后台返回得加密数据 90% 会经过 json.parse
+
+    hook json.parse 当他里面传值得时候 直接断点
+
+    hook open
+        url.indexOf("analysis") != -1
+
+
+
+
+
+
+
+
+
+
+

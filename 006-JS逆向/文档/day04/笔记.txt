@@ -1,0 +1,70 @@
+
+Ut --> request
+Xt --> response
+
+o()[Kt] --> interceptors  搜索这个即可
+
+
+analysis 这个参数现在里面有没有？
+
+params = {brand: 'paid', device: 'iphone', country: 'cn', genre: '36'}
+
+'/rank/index?analysis=exs4CQYVFQ1Udg4WPjl7XgA1Mlk4WlVHUFkISwhXUgQaI0dKS0MHCANUVVMMBiFBUA%3D%3D'
+
+analysis = (0,i[jt])((0, i[qt])(a, d))
+
+1、key = [a，n，a，l，y，s，i，s]  分割
+2、JS算法生成参数    [a，n，a，l，9，y，s，i，s，1，3，4，5，] 自己写JS用下标取值
+analysis 搜索？？
+
+xhr断点去找？
+
+Interceptors  所有的网站都有吗？ 他能干什么？
+
+    1、所有的网站都有吗？
+        不是都有
+
+    2、他能干什么？
+        代理请求和响应
+
+模块安装？
+    JS安装模块 --> npm
+    python --> pip
+
+响应拦截器
+    是不是操作 后端返回加密数据 使用拦截器用算法进行解密  再返回给页面
+
+方法初始化一个新创建的请求
+xhrReq.open(method, url, async);
+
+var h  = new  XMLHttpRequest();
+h.open('GET','https://www.baidu.com/',true)
+
+xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+// 接收回调
+    h.onreadystatechange = function (){
+        if (h.status===200){
+            console.log(h.responseText)
+        }
+    }
+
+// 发包
+h.send();
+
+处理头部加密搜索
+    原生的xhr请求
+        setRequestHeader(key,value)
+    采用的axios
+        headers.sign = value
+        headers['sign'] = value
+
+cookie分析
+
+ // u[66] -- > document
+// u[68] --> cookie
+//  c 值
+// u[66][u[68]] =  rt.update()
+
+ rt.update() 加密的位置
+

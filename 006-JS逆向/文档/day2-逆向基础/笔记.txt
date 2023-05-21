@@ -1,0 +1,34 @@
+
+替换
+    举例：一个网站JS高度混淆  function ss(){}  --> function _OoOo(){}
+          用技术手段 function _OoOo(){} --> function ss(){}
+            解混淆以后可以使用替换让浏览器根据一些规则走本地文件 映射这个意思~
+    基本逻辑： 就是根据URL匹配 让符合这个地址的数据 但是请求还是会从服务器拉数据  映射 走本地
+         删除debugger  解混淆  插桩调试  日志输出 删除无用的逻辑
+
+
+__zp_stoken__ = 4b78ePFAFS0t7Zj1TUTwaG2EVWiV%2BMjZ3TAR4URQ3ewMkcHl2R1I3FlxVQTwMI3U7QUdHIFVdRU8TbSsAF1FFLUxQIhtoJ2NTJQ04TyMMIhxiIAIOGzRNCTwyAExtaElxA351WwY8SGRRXSU%3D
+
+node环境  95%的网站 可以高仿
+浏览器环境
+
+明文 -- > 密文 这个过程
+再使用代码进行模拟这个过程 得到加密参数  再模拟请求才可以成功
+
+请求服务器 加载HTML文件  加载JS文件  用户触发JS  加载某一段JS  对参数加密 发包 接收响应 解密数据 渲染给网页
+
+断点调试
+   dom断点
+         rsa(passwordVal)
+
+   xhr断点
+
+得到APP
+
+
+
+
+
+
+
+
