@@ -1,0 +1,34 @@
+
+
+公钥和私钥是一对的 生成的时候一对
+入口
+    encryptedString(key_to_encode, that.password.val())
+    setMaxDigits(129);
+        var key_to_encode = new RSAKeyPair("010001", "", "978C0A92D2173439707498F0944AA476B1B62595877DD6FA87F6E2AC6DCB3D0BF0B82857439C99B5091192BC134889DFF60C562EC54EFBA4FF2F9D55ADBCCEA4A2FBA80CB398ED501280A007C83AF30C3D1A142D6133C63012B90AB26AC60C898FB66EDC3192C3EC4FF66925A64003B72496099F4F09A9FB72A2CF9E4D770C41");
+
+
+
+setMaxDigits(129) 1024加密
+setMaxDigits(260)  2048位加密
+
+
+
+PUBLIC key
+ 2个地方会出现
+    1、JS里面或者html里面  写死
+    2、后台接口返回 难的  每一次都会变
+
+
+https://api.wei-liu.com/api/v1/Token/code
+    "-----BEGIN PUBLIC KEY-----\r\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo0nnZ/9wVN7HV/VeepE3\r\nIVAlAT6n1fmkXrHxbA08Olv+nYp7QlTW3heOEsOWTEMKRcYU1xAIMwt7pZ+qbyFD\r\nitnHkQUqneYs6PKeK2nDxGXR4MIRUz/MFJ4I3QRzmmklFPkJpfxnL0HnwNHw0fm4\r\nuX3GD9qxEcVsqSdhQMvgrW7gFQMD9tSiaXflgyQv1CZjCPNW2xSpWVoFl0+ODpFT\r\nsEmEt+uRiBD1ZVJnTVTCI0txqFLzFw/JwhUcUgflFRovtkcXTU+8aUCtnAAW019U\r\n5Anw6S4S6Ct2PTO0ZFwRNgjboRmT/0x/zdUfn/h6otQSllRfdqF1RVG4HoDf1U0s\r\neQIDAQAB\r\n-----END PUBLIC KEY-----"
+    "7ca7bcd574e249338432bd7dd5fa0059"
+
+
+encrypt.encrypt(pubCode + sha512(password))
+
+
+调试代码 扣JS 遵循3个原则
+1、从入口开始进攻
+2、先分析明文、如果是遇到动态明文？ 还是把明文写死  先跑通代码
+3、开始封装 改代码
+

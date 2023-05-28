@@ -29,13 +29,16 @@ Hook 是一种钩子技术，在系统没有调用函数之前，钩子程序就
 
 ```javascript
 (function() {
-    var _parse = JSON.parse;
+    var jsonparseback = JSON.parse;
     JSON.parse = function(ps) {
         console.log("Hook JSON.parse ——> ", ps);
         debugger;
-        return _parse(ps);  // 不改变原有的执行逻辑 
+        return jsonparseback(ps);  // 不改变原有的执行逻辑 
     }
 })();
+
+
+JSON.parse 是JSON的parse()方法 , 通过闭包的方式来改写JSON.parse方法
 ```
 
 首先定义了一个变量 `stringify` 保留原始 `JSON.stringify` 方法，然后重写 `JSON.stringify` 方法，遇到 `JSON.stringify` 方法就会执行 `debugger` 语句，会立即断下，最后将接收到的参数返回给原始的 `JSON.stringify` 方法进行处理，确保数据正常传输
